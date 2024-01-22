@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockey</title>
     <!-- fav icon  -->
-    <link rel="stylesheet" href="Images/5.png">
+    <link rel="short icon" href="Images/5.png">
     <!-- tailwind and daysi ui cdn  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 
     <!-- custom style  -->
+    <script>
     tailwind.config = {
         theme: {
           extend: {
@@ -22,11 +28,49 @@
         }
       }
     </script>
+    <style>
+        body{
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
 
 </head>
 <body>
     <header>
-
+        <section class="container lg:px-5 mx-auto my-6">
+            <nav>
+                <div class="navbar bg-base-100">
+                    <div class="navbar-start">
+                      <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                          <li><a>Home</a></li>
+                          <li><a>Abou</a></li>
+                          <li><a>Pages</a></li>
+                          <li><a>blog</a></li>
+                          <li><a>Contact</a></li>
+                        </ul>
+                      </div>
+                      <a class="lg:text-4xl text-2xl  font-extrabold">Hockey<span class="text-my-primary">’</span>s</a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                      <ul class="menu menu-horizontal px-1 text-lg font-semibold space-x-5">
+                        <li><a class="text-my-primary">Home</a></li>
+                        <li><a class="hover:text-my-primary">Abou</a></li>
+                        <li><a class="hover:text-my-primary">Pages</a></li>
+                        <li><a class="hover:text-my-primary">blog</a></li>
+                        <li><a class="hover:text-my-primary">Contact</a></li>
+                      </ul>
+                    </div>
+                    <div class="navbar-end space-x-6">
+                        <span class="lg:block hidden"><i class="hidden fa-solid fa-magnifying-glass"></i></span>
+                      <a class="btn bg-my-primary hover:bg-my-primary text-white text-xl font-bold lg:px-8 px-2 py-2">Get Ticket</a>
+                    </div>
+                  </div>
+            </nav>
+        </section>
     </header>
     <main>
 
@@ -34,5 +78,8 @@
     <footer>
 
     </footer>
+
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/6bcbc42561.js" crossorigin="anonymous"></script>
 </body>
 </html>
