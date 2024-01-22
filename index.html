@@ -1,85 +1,172 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hockey</title>
     <!-- fav icon  -->
-    <link rel="short icon" href="Images/5.png">
+    <link rel="short icon" href="Images/5.png" />
     <!-- tailwind and daysi ui cdn  -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- google fonts  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- custom style  -->
     <script>
-    tailwind.config = {
+      tailwind.config = {
         theme: {
           extend: {
             colors: {
-              clifford: '#da373d',
-              'my-primary': '#FF4240',
-            }
-          }
-        }
-      }
+              clifford: "#da373d",
+              "my-primary": "#FF4240",
+            },
+          },
+        },
+      };
     </script>
     <style>
-        body{
-            font-family: 'Manrope', sans-serif;
-        }
+      body {
+        font-family: "Manrope", sans-serif;
+      }
     </style>
-
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <section class="container lg:px-5 mx-auto my-6">
-            <nav>
-                <div class="navbar bg-base-100">
-                    <div class="navbar-start">
-                      <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                        </div>
-                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                          <li><a>Home</a></li>
-                          <li><a>Abou</a></li>
-                          <li><a>Pages</a></li>
-                          <li><a>blog</a></li>
-                          <li><a>Contact</a></li>
-                        </ul>
-                      </div>
-                      <a class="lg:text-4xl text-2xl  font-extrabold">Hockey<span class="text-my-primary">’</span>s</a>
-                    </div>
-                    <div class="navbar-center hidden lg:flex">
-                      <ul class="menu menu-horizontal px-1 text-lg font-semibold space-x-5">
-                        <li><a class="text-my-primary">Home</a></li>
-                        <li><a class="hover:text-my-primary">Abou</a></li>
-                        <li><a class="hover:text-my-primary">Pages</a></li>
-                        <li><a class="hover:text-my-primary">blog</a></li>
-                        <li><a class="hover:text-my-primary">Contact</a></li>
-                      </ul>
-                    </div>
-                    <div class="navbar-end space-x-6">
-                        <span class="lg:block hidden"><i class="hidden fa-solid fa-magnifying-glass"></i></span>
-                      <a class="btn bg-my-primary hover:bg-my-primary text-white text-xl font-bold lg:px-8 px-2 py-2">Get Ticket</a>
-                    </div>
-                  </div>
-            </nav>
-        </section>
+      <!-- navigation section  -->
+      <section class="container lg:px-5 mx-auto my-6 px-4">
+        <nav>
+          <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                >
+                  <li><a>Home</a></li>
+                  <li><a>Abou</a></li>
+                  <li><a>Pages</a></li>
+                  <li><a>blog</a></li>
+                  <li><a>Contact</a></li>
+                </ul>
+              </div>
+              <a class="lg:text-4xl text-2xl font-extrabold"
+                >Hockey<span class="text-my-primary">’</span>s</a
+              >
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul
+                class="menu menu-horizontal px-1 text-lg font-semibold space-x-5"
+              >
+                <li><a class="text-my-primary">Home</a></li>
+                <li><a class="hover:text-my-primary">Abou</a></li>
+                <li><a class="hover:text-my-primary">Pages</a></li>
+                <li><a class="hover:text-my-primary">blog</a></li>
+                <li><a class="hover:text-my-primary">Contact</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end space-x-6">
+              <span class="lg:block hidden"
+                ><i class="hidden fa-solid fa-magnifying-glass"></i
+              ></span>
+              <a
+                class="btn bg-my-primary hover:bg-my-primary text-white text-xl font-bold lg:px-8 px-2 py-2"
+                >Get Ticket</a
+              >
+            </div>
+          </div>
+        </nav>
+      </section>
+      <!-- banner section  -->
+      <section class="container lg:px-5 mx-auto px-4">
+        <div class="carousel w-full">
+          <div
+            id="slide1"
+            class="carousel-item relative w-full lg:h-[560px] h-auto"
+          >
+            <img src="Images/1.png" class="w-full bg-center" />
+            <div class="absolute flex gap-8 transform lg:left-8 left-1/4 lg:bottom-12 bottom-2 top-2/2">
+              <a href="#slide4" class="btn btn-circle bg-black text-white">❮</a>
+              <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
+            </div>
+          </div>
+          <div
+            id="slide2"
+            class="carousel-item relative w-full lg:h-[560px] h-auto"
+          >
+            <img src="Images/2.png" class="w-full" />
+            <div class="absolute flex gap-8 transform lg:left-8 left-1/4 lg:bottom-12 bottom-2 top-2/2">
+              <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a>
+              <a href="#slide3" class="btn btn-circle bg-black text-white">❯</a>
+            </div>
+          </div>
+          <div
+            id="slide3"
+            class="carousel-item relative w-full lg:h-[560px] h-auto"
+          >
+            <img
+              src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg"
+              class="w-full"
+            />
+            <div class="absolute flex gap-8 transform lg:left-8 left-1/4 lg:bottom-12 bottom-2 top-2/2">
+              <a href="#slide2" class="btn btn-circle bg-black text-white">❮</a>
+              <a href="#slide4" class="btn btn-circle bg-black text-white">❯</a>
+            </div>
+          </div>
+          <div
+            id="slide4"
+            class="carousel-item relative w-full lg:h-[560px] h-auto"
+          >
+            <img src="Images/3.png" class="w-full" />
+            <div class="absolute flex gap-8 transform lg:left-8 left-1/4 lg:bottom-12 bottom-2 top-2/2">
+              <a href="#slide3" class="btn btn-circle bg-black text-white">❮</a>
+              <a href="#slide1" class="btn btn-circle bg-black text-white">❯</a>
+            </div>
+          </div>
+        </div>
+       <div class="flex lg:justify-end lg:mx-8  lg:-translate-y-44" >
+        <div class="bg-black text-white lg:w-5/12 w-full rounded-md p-6 space-y-4 ">
+            <h3 class="text-2xl">Meet all the heroes from the field</h3>
+            <p class="opacity-70">
+              Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+              turpis placerat dolor. Purus urna in sit nullam proin.
+            </p>
+          </div>
+       </div>
+      </section>
     </header>
-    <main>
-
-    </main>
-    <footer>
-
-    </footer>
+    <main></main>
+    <footer></footer>
 
     <!-- font awesome cdn -->
-    <script src="https://kit.fontawesome.com/6bcbc42561.js" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/6bcbc42561.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
